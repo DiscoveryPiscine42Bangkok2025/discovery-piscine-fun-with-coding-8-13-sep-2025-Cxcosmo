@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.07rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 20px;
+}
+
+li {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+ul ul {
+    display: none;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+label.sandwich {
+    border-radius: 10px;
+    border: 2px solid rgb(174, 16, 16);
+    background-color: antiquewhite;
+}
+
+.sandwich:hover {
+    background: linear-gradient(
+        90deg,
+        rgb(210, 152, 105),
+        rgb(93, 230, 93),
+        rgb(239, 172, 197),
+        rgb(210, 152, 105)
+    );
+}
+
+input[type="checkbox"]:checked + label + ul {
+    display: flex;
+}
+
+.bread1 {
+    background-color: rgb(210, 152, 105);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.bread2 {
+    background-color: rgb(210, 152, 105);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.vegetable {
+    background-color: rgb(93, 230, 93);
+}
+
+.ham {
+    background: linear-gradient(90deg, rgb(254, 164, 164),rgb(255, 215, 142),rgb(255, 255, 157),rgb(159, 255, 159),rgb(136, 136, 242),rgb(255, 176, 255));
+}
+
+.cheese {
+    background-color: rgb(255, 216, 87);
+}
