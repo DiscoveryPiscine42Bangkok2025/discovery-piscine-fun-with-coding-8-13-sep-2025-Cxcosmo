@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#right, #left {
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ff07da;
+    border-radius: 10px;
+    background-color: rgb(253, 170, 184);
+}
+
+input ,select {
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ff07da;
+    border-radius: 10px;
+    background-color: rgb(255, 91, 157);
+    color: white;
+}
