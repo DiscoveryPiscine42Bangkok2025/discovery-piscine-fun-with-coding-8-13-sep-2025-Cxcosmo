@@ -36,7 +36,7 @@ function saveTodos() {
     document.querySelectorAll("#ft_list div").forEach(d => {
         todos.push(d.textContent);
     });
-    setCookie("todos", JSON.stringify(todos), 7); // keep 7 days
+    setCookie("todos", JSON.stringify(todos), 7);
 }
 
 function setCookie(name, value, days) {
