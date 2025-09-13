@@ -1,6 +1,6 @@
 $(document).ready(function () {
     let size = 200;
-    const colors = ['#bbedffff', '#77d8fbff', '#00bbffff'];
+    const colors = ['#ffbbbbff', '#77fb86ff', '#00bbffff'];
     let colorIndex = 0;
     $("#balloon").click(function () {
         size += 10;
@@ -15,7 +15,7 @@ $(document).ready(function () {
             backgroundColor: colors[colorIndex]
         });
     });
-    $("#balloon").mouseenter(function () { 
+    $("#balloon").mouseleave(function () { 
         if (size > 220) {
             size -= 5;
             colorIndex = (colorIndex + 1) % colors.length;

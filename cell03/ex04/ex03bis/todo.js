@@ -1,7 +1,6 @@
 $(document).ready(function() {
     const list = $("#ft_list");
     const saved = getCookie("todos");
-
     if (saved) {
         const todos = JSON.parse(saved);
         todos.forEach(task => addTodo(task, false));
